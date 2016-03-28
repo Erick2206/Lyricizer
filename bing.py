@@ -4,8 +4,6 @@ from requests.auth import HTTPBasicAuth
 import pprint
 import json
 
-# Bing API key
-API_KEY = "GujotwKh+KtMj7xW0/nCwN62LRtgnTbfymhpRKJLWY0"
 
 def bing_api(query, source_type = "Web", top = 10, format = 'json'):
     """Returns the decoded json response content
@@ -33,9 +31,8 @@ def bing_api(query, source_type = "Web", top = 10, format = 'json'):
 
     # get response from search url
     response_data = requests.get(url, auth = auth)
-    # decode json response content  json.loads(r.text)
+    # decode json response content
     json_result = response_data.json()
-#    json_result = json.loads(str(response_data))
     return json_result
 
 if __name__=="__main__":

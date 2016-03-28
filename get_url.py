@@ -1,15 +1,6 @@
 from bing import bing_api
 import pprint
 
-# Stores name of the track
-#search_track=raw_input("Enter name of song: ")
-
-# Stores name of the artist
-#search_artist=raw_input("Enter name of artist: ")
-
-# Stores the final search query
-#search = search_artist + " " +  search_track + " azlyrics"
-
 def az_url(search):
     '''
     A function that returns the URL of azlyrics
@@ -41,3 +32,16 @@ def az_url(search):
 
     else:
         return list_of_url[counter-1]
+
+if __name__=='__main__':
+    # Stores name of the track
+    search_track=raw_input("Enter name of song: ")
+
+    # Stores name of the artist
+    search_artist=raw_input("Enter name of artist: ")
+
+    # Stores the final search query
+    search = search_artist + " " +  search_track + " azlyrics"
+
+    # Calls az_url function
+    az_url(search)
