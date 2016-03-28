@@ -29,4 +29,4 @@ if url!="Sorry, No Data Found :-(":
         print line
 
 else:
-    print "Sorry No Data Found! :("        
+    print "Sorry No Data Found! :("
