@@ -1,5 +1,9 @@
 from bing import bing_api
+<<<<<<< HEAD
 from get_url import *
+=======
+from get_url import az_url
+>>>>>>> af9563100d75ef3d504f7dce896ce3ad9e08edda
 from BeautifulSoup import *
 import urllib
 import pprint
@@ -27,6 +31,9 @@ if url!="Sorry, No Data Found :-(":
         if str(line)=='<br />' or str(line)=='<i>' or str(line)=='</i>':
             continue
         print line
+<<<<<<< HEAD
 
 else:
     print "Sorry No Data Found! :("
+=======
+>>>>>>> af9563100d75ef3d504f7dce896ce3ad9e08edda
