@@ -1,6 +1,7 @@
 from bing import bing_api
 from get_url import *
 from get_url import az_url
+##import bs4 as BeautifulSoup
 from BeautifulSoup import *
 import urllib
 import pprint

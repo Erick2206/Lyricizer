@@ -7,7 +7,7 @@ import json
 # Bing API key
 API_KEY = "GujotwKh+KtMj7xW0/nCwN62LRtgnTbfymhpRKJLWY0"
 
-def bing_api(query, source_type = "Web", top = 10, format = 'json'):
+def bing_api(query, source_type = "Web", top = 5, format = 'json'):
     """Returns the decoded json response content
 
     :param query: query for search

@@ -16,12 +16,11 @@ def az_url(search):
     '''
     result=bing_api(search)
 
-
     temp_url=[]
 
     list_of_url=[]
 
-    for i in range(10):
+    for i in range(5):
         list_of_url.append(result['d']['results'][i]['Url'])
 
     for url in list_of_url:
@@ -44,13 +43,12 @@ def az_url(search):
 
 if __name__=='__main__':
     # Stores name of the track
-    search_track=raw_input("Enter name of song: ")
+    search_track='Iridescent'
 
     # Stores name of the artist
-    search_artist=raw_input("Enter name of artist: ")
-
+    search_artist='Linkin Park'
     # Stores the final search query
     search = search_artist + " " +  search_track + " azlyrics"
 
     # Calls az_url function
-    az_url(search)
+    print az_url(search)
